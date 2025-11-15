@@ -1,4 +1,8 @@
 import os, pandas as pd, matplotlib.pyplot as plt
+import matplotlib
+
+matplotlib.use("Agg")  # headless backend for macOS / servers
+
 
 def spending_by_category(df: pd.DataFrame, out_path: str):
   os.makedirs(os.path.dirname(out_path), exist_ok=True)

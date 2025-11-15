@@ -1,37 +1,23 @@
 {
   "summary": {
     "income": 4500.0,
-    "total_expenses": 9774.42,
-    "savings_rate": 0.0,
-    "categories_found": 10,
-    "risk_score": 0.79
+    "total_expenses": 1720,
+    "savings_rate": 0.618,
+    "categories_found": 2,
+    "risk_score": 0.23,
+    "runtime_seconds": 0.113,
+    "flags": []
   },
   "plan": {
     "target": {
-      "rent": 3200.0,
-      "utilities": 360.0,
-      "dining": 6.49,
-      "entertainment": 7.74,
-      "groceries": 9.56,
-      "healthcare": 3.4,
-      "other": 2.21,
-      "shopping": 4.81,
-      "subscriptions": 1.86,
-      "transport": 3.94,
+      "rent": 1600,
+      "shopping": 2000.0,
       "savings": 900.0
     },
     "deltas": {
-      "healthcare": -524.87,
-      "transport": -607.5,
-      "entertainment": -1194.72,
+      "rent": 0,
       "savings": 900.0,
-      "subscriptions": -287.01,
-      "dining": -1001.06,
-      "rent": 0.0,
-      "shopping": -742.37,
-      "groceries": -1475.29,
-      "utilities": 0.0,
-      "other": -341.59
+      "shopping": 1880.0
     }
   }
 }

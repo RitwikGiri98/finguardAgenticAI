@@ -18,6 +18,14 @@ env/
 *.swp
 *.swo
 
+# Environment variables
+.env
+.env.local
+
+# Cache directories
+outputs/cache/
+*.cache
+
 # Optional: Uncomment if you don't want to track output files
 # outputs/
 

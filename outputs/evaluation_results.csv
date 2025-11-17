@@ -1,0 +1,5 @@
+income,total_expenses,categories_found,savings_rate,risk_score,runtime_seconds,ux_proxy,robustness_proxy,num_flags,case,elapsed
+3500.0,4699.9,10,0.0,0.7,0.13,0.3,1.0,1,light,0.001
+4500.0,9774.42,10,0.0,0.79,0.358,0.21,1.0,1,moderate,0.001
+5200.0,20945.13,10,0.0,0.89,0.097,0.11,0.95,2,heavy,0.0
+4500.0,3000.0,1,0.333,0.83,0.065,0.17,0.95,1,corner_dining,0.0

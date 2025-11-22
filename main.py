@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from agents.agents import ControllerAgent
+from src.agents.agents import ControllerAgent
 
 
 def analyze_agentic(csv_path: str, monthly_income: float, out_dir: str = "outputs"):

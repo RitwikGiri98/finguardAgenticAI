@@ -27,7 +27,9 @@ This project is part of the **Building Agentic Systems** course at Northeastern 
 ## 🧱 Architecture
 
 
-[HighLevelDiagram.png]
+<p align="center">
+  <img src="./HighLevelDiagram.png" alt="Architecture Diagram" width="800">
+</p>
 
 <p align="center">
   <em>(Controller → Agents → Tools → Memory → API → Evaluation)</em>
@@ -36,32 +38,51 @@ This project is part of the **Building Agentic Systems** course at Northeastern 
 ## 📂 Project Structure
 
 ```
-finGuardAI/
+FinGuardAI/
 │
-├── data/                   # Input financial profiles
-├── outputs/                # Generated charts + reports
+├── data/                      # Input financial datasets (light, moderate, heavy, corner cases)
+│   └── *.csv
+│
+├── outputs/                   # Auto-generated analysis results
+│   ├── report.json            # Machine-readable summary
+│   ├── report.md              # Human-readable Markdown report
+│   ├── spend_by_category.png  # Visualization: category spending
+│   ├── before_after_budget.png# Visualization: rebalance comparison
+│   └── *.png                  # Additional plots
+│
+├── scripts/
+│   └── generate_data.py       # Synthetic dataset generator
 │
 ├── src/
-│   ├── api.py              # Flask REST API
-│   ├── main.py             # CLI execution
+│   ├── agents/
+│   │   ├── agents.py          # ControllerAgent + specialized agents
+│   │   └── __init__.py
 │   │
-│   ├── agents/             # Multi-agent system
-│   │   ├── agents.py       # Controller + specialized agents
+│   ├── tasks/
+│   │   ├── categorize.py      # Spending categorization logic
+│   │   └── __init__.py
 │   │
-│   ├── tools/              # Built-in + custom tools
-│   │   ├── categorizer.py
-│   │   ├── plots.py
-│   │   ├── budget_rebalancer.py    # CUSTOM TOOL
+│   ├── tools/
+│   │   ├── benchmarks.py      # Benchmark lookups (50/30/20 rule, caps)
+│   │   ├── budget_rebalancer.py # Custom tool: SmartBudgetRebalancer
+│   │   ├── formatter.py       # Markdown/JSON formatting utilities
+│   │   └── __init__.py
 │   │
-│   ├── utils/              # Utility modules
-│   │   ├── cache.py
-│   │   ├── formatter.py
-│   │   ├── metrics.py
+│   ├── utils/
+│   │   ├── cache.py           # Lightweight caching for repeated runs
+│   │   ├── metrics.py         # Evaluation metrics utilities
+│   │   ├── plots.py           # Matplotlib-based visualization tool
+│   │   └── __init__.py
 │   │
-│   ├── eval.py             # Evaluation Suite
+│   ├── api.py                 # Flask API (health, /analyze, /demo/<profile>)
+│   ├── eval.py                # Automated multi-profile evaluation suite
+│   └── main.py                # Entry point for local execution
 │
-├── requirements.txt
-└── README.md
+├── .env                       # Environment variables (ignored in git)
+├── .gitignore                 # Excludes venv, outputs, etc.
+│
+└── requirements.txt           # Python dependencies
+
 ```
 
 ## 🤖 System Components

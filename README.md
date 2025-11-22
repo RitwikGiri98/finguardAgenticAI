@@ -1,14 +1,13 @@
 # FinGuardAI – Agentic Financial Wellness System
-
-A multi-agent AI system for budgeting, risk scoring, and financial planning.
-
-<p align="center">
+<p >
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" />
   <img src="https://img.shields.io/badge/Python-3.10+-blue.svg?style=flat-square" />
   <img src="https://img.shields.io/badge/Framework-Agentic%20AI-orange?style=flat-square" />
   <img src="https://img.shields.io/badge/Category-Financial%20AI-purple?style=flat-square" />
   <img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" />
 </p>
+
+A multi-agent AI system for budgeting, risk scoring, and financial planning.
 
 ## 🔍 Overview
 

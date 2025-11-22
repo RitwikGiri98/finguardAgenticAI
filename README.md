@@ -27,7 +27,9 @@ This project is part of the **Building Agentic Systems** course at Northeastern 
 ## 🧱 Architecture
 
 
-[HighLevelDiagram.png]
+<p align="center">
+  <img src="./HighLevelDiagram.png" alt="Architecture Diagram" width="800">
+</p>
 
 <p align="center">
   <em>(Controller → Agents → Tools → Memory → API → Evaluation)</em>

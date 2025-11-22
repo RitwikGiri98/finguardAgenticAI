@@ -178,9 +178,13 @@ curl -X POST http://127.0.0.1:5000/analyze \
 
 ## 📊 Example Outputs
 
-[Insert example PNG chart: Spending by Category]
+<p align="center">
+  <img src="./outputs/spend_by_category.png" alt="Architecture Diagram" width="800">
+</p>
 
-[Insert example PNG chart: Before vs After Budget]
+<p align="center">
+  <img src="./outputs/before_after_budget.png" alt="Architecture Diagram" width="800">
+</p>
 
 ## 🧪 Evaluation Suite
 
